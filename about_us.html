@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>About Us</title>
+		<link rel="stylesheet" type="text/css" href="/tcarijodoh/css/bootstrap.css">
+	</head>
+	<body>
+		<h1>About us</h1>
+		<!-- <p>Ini adalah halaman kita</p> -->
+		<p id="my_paragraph"></p>
+
+		<br>
+		<button type="button" id="add_paragraph" class="btn btn-primary">Click me to add paragraph</button>
+
+
+		<script type="text/javascript" src="/tcarijodoh/js/jquery-3.3.1.min.js"></script>
+
+		<script>
+			$("#add_paragraph").click(function(){
+				$("#my_paragraph").html("Ini adalah halaman kita");
+				$("#my_paragraph").attr('class', 'label label-primary');
+			});
+		</script>
+	</body>
+
+</html>
